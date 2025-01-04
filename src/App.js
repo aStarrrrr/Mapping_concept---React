@@ -12,12 +12,12 @@ function App() {
   return (
     <div>
       {
-        emp.map((obj,index)=>{
-          return (
+        emp.map((obj,index)=>
+          (
             // <Employee key={index} name={obj.name} age={obj.age} />
             <Employee key={index} {...obj} />
           )
-        })
+        )
       }
     </div>
   );
