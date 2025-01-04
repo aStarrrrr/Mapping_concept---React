@@ -14,7 +14,8 @@ function App() {
       {
         emp.map((obj,index)=>{
           return (
-            <Employee key={index} name={obj.name} age={obj.age} />
+            // <Employee key={index} name={obj.name} age={obj.age} />
+            <Employee key={index} {...obj} />
           )
         })
       }
